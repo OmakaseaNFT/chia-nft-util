@@ -54,4 +54,5 @@ node createOffers.js
 Feel free to raise an issue if something is broken!
 
 Made for [Cacti](https://omakasea.com/cacti)
-Made by ET at [Omakasea](https://twitter.com/Omakasea_) [Website](https://omakasea.com/)
+Made by ET at [Omakasea](https://twitter.com/Omakasea_)
+[Website](https://omakasea.com/)
