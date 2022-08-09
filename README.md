@@ -8,7 +8,7 @@ This simple NodeJS tool accomplishes 4 tasks:
 4) Bulk create offers for NFTs
 
 Works with IPFS out of the box. Must have images and metadata ready, along with their IPFS CIDs.
-Check `/metadata` for a metadata template.
+Check `/metadata` for example metadata from Chia Friends.
 
 Powered by [Chia Agent](https://github.com/Chia-Mine/chia-agent/blob/main/src/api/README.md)
 
