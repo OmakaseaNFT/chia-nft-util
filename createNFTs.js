@@ -54,7 +54,7 @@ async function createNFT({
     license_uris: ["https://raw.githubusercontent.com/Chia-Network/chia-blockchain/main/LICENSE"],
     license_hash: "30a358857da6b49f57cfe819c1ca43bfe007f528eb784df5da5cb64577e0ffc6",
     royalty_address: ROYALTY_ADDRESS,
-    ROYALTY_VALUE: ROYALTY_VALUE,
+    royalty_percentage: ROYALTY_VALUE,
     target_address: TARGET_ADDRESS,
     fee: CREATE_FEE
   }
