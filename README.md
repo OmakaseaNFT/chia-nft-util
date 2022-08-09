@@ -45,6 +45,7 @@ Create NFTs
 node createNFTs.js
 ```
 
+Optionally populate `OFFER_IGNORE_LIST` in `constants.js` to ignore existing offers on created NFTs.
 Create offers, outputs offer files to `/offers`
 
 ```
