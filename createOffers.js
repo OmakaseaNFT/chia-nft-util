@@ -7,6 +7,7 @@ const path = require("path")
 const {
   WALLET_ID,
   WALLET_FINGERPRINT,
+  OFFER_AMOUNT_MOJOS,
   OFFER_IGNORE_LIST
 } = require("./utils/constants")
 
@@ -21,10 +22,12 @@ const agent = new RPCAgent({
 async function createOffer(launcherID) {
   const params = {
     offer: {
-      "1": 500000000000,
-      //launcher coin ID
+      // assumes 1 is ID for XCH wallet
+      "1": OFFER_AMOUNT_MOJOS,
+      // launcher coin ID
       [launcherID]: -1
     },
+    // only need a fee to expedite offer acceptance, not absolutely necessary
     // fee: 50000000,
   }
   const result = await create_offer_for_ids(agent, params)
