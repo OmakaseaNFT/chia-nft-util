@@ -9,7 +9,7 @@ This simple NodeJS tool accomplishes 4 tasks:
 
 Works with IPFS out of the box, must have images and metadata CIDs ready.
 
-Powered by (Chia Agent)[https://github.com/Chia-Mine/chia-agent/blob/main/src/api/README.md]
+Powered by [Chia Agent](https://github.com/Chia-Mine/chia-agent/blob/main/src/api/README.md)
 
 -------------------------------------------------------------
 
