@@ -1,0 +1,21 @@
+const WALLET_ID = 2
+const WALLET_FINGERPRINT = 12345676
+const TARGET_ADDRESS =  "xch1033sq5uc85glqay4rcm7cnkxp7jyd8hrths3htrvv7m5mst7ewjsc97gyk"
+const ROYALTY_ADDRESS = "xch1033sq5uc85glqay4rcm7cnkxp7jyd8hrths3htrvv7m5mst7ewjsc97gyk"
+const ROYALTY_VALUE = "10000"
+const TOTAL_SUPPLY = 10000
+const CREATE_FEE = 800000000
+const OFFER_IGNORE_LIST = [
+  "de38ba45e23e90de5b465c488ba898f64b955dcac2b2d44c9ca84d8bcf3f3791"
+]
+
+module.exports = {
+  WALLET_ID,
+  WALLET_FINGERPRINT,
+  TARGET_ADDRESS,
+  ROYALTY_ADDRESS,
+  ROYALTY_VALUE,
+  TOTAL_SUPPLY,
+  CREATE_FEE,
+  OFFER_IGNORE_LIST
+}
