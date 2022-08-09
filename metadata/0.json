@@ -1,0 +1,46 @@
+{
+  "format": "CHIP-0007",
+  "name": "Chia Friends #4053",
+  "description": "10,000 eco-bit NFTs on Chia, from Chia.",
+  "sensitive_content": false,
+  "collection": {
+    "name": "Chia Friends",
+    "id": "517B1E97-F1AF-4824-A7B9-8D85E281D7B8",
+    "attributes": [
+      {
+      "type": "description",
+      "value": "10,000 eco-bit NFTs on Chia, from Chia."
+      },
+      {
+      "type": "twitter",
+      "value": "@chia_friends"
+      },
+      {
+      "type": "website",
+      "value": "https://www.chiafriends.xyz/"
+      }
+    ]
+  },
+  "attributes": [
+    {
+    "trait_type": "Background",
+    "value": "Dan Perrywinkle"
+    },
+    {
+    "trait_type": "Body",
+    "value": "K32 (Steel)"
+    },
+    {
+    "trait_type": "Eyes",
+    "value": "Blue"
+    },
+    {
+    "trait_type": "Hieroglyphs",
+    "value": 3
+    },
+    {
+    "trait_type": "Mouth",
+    "value": "Jagged (Steel)"
+    }
+  ]
+}

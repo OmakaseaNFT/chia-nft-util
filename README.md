@@ -7,7 +7,8 @@ This simple NodeJS tool accomplishes 4 tasks:
 3) Create Offers for NFTs
 4) Bulk create offers for NFTs
 
-Works with IPFS out of the box, must have images and metadata CIDs ready.
+Works with IPFS out of the box. Must have images and metadata ready, along with their IPFS CIDs.
+Check `/metadata` for a metadata template.
 
 Powered by [Chia Agent](https://github.com/Chia-Mine/chia-agent/blob/main/src/api/README.md)
 
@@ -34,8 +35,7 @@ Set Constants in `utils/constants.js`
 
 Set `CURRENT_INDEX` in `createNFTs.js`
 
-Modify `metadataCids.json` & `imgCids.json` to include IPFS CIDS.
-Populate `/json` & `/images` with JSON metadata and images. Use sequential naming convention.
+Modify `metadataCids.json` & `imgCids.json` to include IPFS CIDs. These CIDs should represent the JSON metadata and images in `/metadata` & `/images`.
 
 Make sure you have a Chia wallet and node running.
 
@@ -46,6 +46,7 @@ node createNFTs.js
 ```
 
 Optionally populate `OFFER_IGNORE_LIST` in `constants.js` to ignore existing offers on created NFTs.
+
 Create offers, outputs offer files to `/offers`
 
 ```
@@ -54,7 +55,7 @@ node createOffers.js
 
 Feel free to raise an issue if something is broken!
 
-Made for [Cacti](https://omakasea.com/cacti)
+Made for [Cacti](https://omakasea.com/cacti) (Coming Soon)
 
 Made by ET at [Omakasea](https://twitter.com/Omakasea_)
 
