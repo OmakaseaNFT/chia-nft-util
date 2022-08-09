@@ -29,9 +29,9 @@ async function login(fingerprint) {
   return finger
 }
 
-async function deleteUnconfirmedTx() {
+async function deleteUnconfirmedTx(walletId) {
   const params = {
-    wallet_id: 3
+    wallet_id: walletId
   }
   const del = await delete_unconfirmed_transactions(agent, params)
   return del
