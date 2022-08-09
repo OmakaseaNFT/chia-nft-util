@@ -31,6 +31,7 @@ Set Constants in `utils/constants.js`
   ROYALTY_VALUE         // Royalty value - 10,000 = 100%
   TOTAL_SUPPLY          // Amount of NFTs to mint
   CREATE_FEE            // Fee paid to farmers. Test between 600000000 and 800000000 Mojos
+  OFFER_AMOUNT_MOJOS    // Amount of Mojos to request for an NFT offer
 ```
 
 Set `CURRENT_INDEX` in `createNFTs.js`
