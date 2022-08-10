@@ -19,7 +19,7 @@ const agent = new RPCAgent({
   service: "wallet",
 });
 
-async function createOffer(launcherID) {
+async function createOffer(launcherID, index) {
   const params = {
     offer: {
       // assumes 1 is ID for XCH wallet
@@ -31,7 +31,7 @@ async function createOffer(launcherID) {
     // fee: 50000000,
   }
   const result = await create_offer_for_ids(agent, params)
-  await fs.writeFile(path.join(__dirname, "offers", `offer_${launcherID}.offer`), result.offer)
+  await fs.writeFile(path.join(__dirname, "offers", `offer_${index}.offer`), result.offer)
   return result
 }
 
@@ -40,10 +40,14 @@ async function bulkCreateOffers() {
 
   const nfts = await getNFTs(WALLET_ID)
   const nftsLength = nfts.nft_list.length
-  for (let i=0; i<nftsLength; i++) {
+  
+  const offerDir = await fs.readdir(path.join(__dirname, "offers"))
+  const maxOfferIndex = offerDir.length - 1
+
+  for (let i=maxOfferIndex + 1; i<nftsLength; i++) {
     const launcherID = nfts.nft_list[i].launcher_id
     if (launcherID in OFFER_IGNORE_LIST) continue
-    await createOffer(launcherID)
+    await createOffer(launcherID, i)
   }
 }
 
