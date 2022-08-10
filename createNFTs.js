@@ -86,15 +86,15 @@ async function bulkCreate() {
   })
 
   await on_state_changed_of_wallet(daemon, async(event) => {
-    // exit if all NFTs minted
-    if (CURRENT_INDEX === TOTAL_SUPPLY) {
-      console.log("All NFTs Minted!")
-      process.exit()
-    }
     if (
       event.data.state === "nft_coin_added" &&
       event.data.success
       ) {
+      // exit if all NFTs minted
+      if (CURRENT_INDEX === TOTAL_SUPPLY) {
+        console.log("All NFTs Minted!")
+        process.exit()
+      }
       console.log("PREVIOUS INDEX MINTED: ", CURRENT_INDEX - 1)
       console.log("CURRENT PENDING INDEX: ", CURRENT_INDEX)
 
