@@ -48,7 +48,7 @@ node createNFTs.js
 
 Optionally populate `OFFER_IGNORE_LIST` in `constants.js` to ignore existing offers on created NFTs.
 
-Create offers, outputs offer files to `/offers`
+Create offers, outputs offer files to `/offers`. Uses the most recent offer in the directory as the starting index. 
 
 ```
 node createOffers.js
